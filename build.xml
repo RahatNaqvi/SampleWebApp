@@ -25,13 +25,13 @@
         <JUnit printsummary="yes" haltonfailure="yes">
               <classpath>
                 <pathelement location="build/classes"/>
-                <pathelement path="WebContent/WEB-INF/lib/JUnit.jar"/>
+                <pathelement path="WebContent/WEB-INF/lib/junit.jar"/>
                 <pathelement path="WebContent/WEB-INF/lib/org.hamcrest.core_1.3.0.v201303031735.jar"/>
               </classpath>
-              <test name="junit.TestCalculator" haltonfailure="no" outfile="TestCalculator_JUnitResult">
+              <test name="junit.TestCalculator" haltonfailure="no" outfile="TestCalculator_junitResult">
                 <formatter type="xml"/>
               </test>
-        </JUnit>
+        </junit>
     </target>
 	<target name="war" depends="compile">
         <war destfile="dest/SampleWebApp.war" webxml="WebContent/WEB-INF/web.xml">
