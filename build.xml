@@ -21,7 +21,7 @@
             <formatter type="xml" toFile="checkstyle_errors.xml"/>
         </checkstyle>
     </target>
-    <target name="JUnit" depends="compile">
+    <target name="junit" depends="compile">
         <JUnit printsummary="yes" haltonfailure="yes">
               <classpath>
                 <pathelement location="build/classes"/>
