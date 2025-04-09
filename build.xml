@@ -22,7 +22,7 @@
         </checkstyle>
     </target>
     <target name="junit" depends="compile">
-        <JUnit printsummary="yes" haltonfailure="yes">
+        <junit printsummary="yes" haltonfailure="yes">
               <classpath>
                 <pathelement location="build/classes"/>
                 <pathelement path="WebContent/WEB-INF/lib/junit.jar"/>
